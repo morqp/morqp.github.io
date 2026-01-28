@@ -1,3 +1,7 @@
-theme: jekyll-theme-minimal
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: jeromelachaud/freelancer-theme
+#theme: jekyll-theme-minimal
 title: Maria Cosneanu - Portfolio 
 description: Bookmark this to keep an eye on my project updates!
