@@ -509,27 +509,35 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
-.client__logos {
+.experience__items {
     display: flex;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+    gap: var(--gutter-small);
 }
 
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+@media(max-width: 900px) {
+    .experience__items {
+        flex-direction: column;
+    }
+
+    .experience__item {
+        margin: 0;
+    }
+}
+
+
+.experience__item {
+    flex: 1;
+    padding: var(--gutter-small);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 1rem;
+    margin: 0 var(--gutter-small);
 }
 
 @media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
+    .experience__item { margin: 0 var(--gutter-normal) 0 0; }
 }
+
 
 /* --------------------------------------- */
 /* ----- About ----- */

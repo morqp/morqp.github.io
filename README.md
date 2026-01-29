@@ -1,7 +1,6 @@
----
-title: Maria Cosneanu - Portfolio
----
-morqp.github.io
+# Maria Cosneanu - Portfolio
+
+## morqp.github.io
 
 ### Credits
 
